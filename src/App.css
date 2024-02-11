@@ -776,6 +776,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute; /* Set absolute positioning */
     left: 0px; /* Adjust position as needed */
   }
+  .tab-pane-container .timeline-block-right {
+    float: right;
+  }
+  
+  .tab-pane-container .timeline-block-left {
+    float: right;
+    direction: rtl
+  }
+  
+  .tab-pane-container .timeline-block-right .timeline-content ,
+  .tab-pane-container .timeline-block-right .timeline-content p  {
+    text-align: right;
+  }
+  
+  .tab-pane-container .timeline-block-left .timeline-content p,
+  .tab-pane-container .timeline-block-left .timeline-content {
+    text-align: right;
+  }
 
 
 }
