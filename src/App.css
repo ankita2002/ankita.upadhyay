@@ -777,22 +777,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     left: 0px; /* Adjust position as needed */
   }
   .tab-pane-container .timeline-block-right {
-    float: right;
+    float: left;
   }
   
   .tab-pane-container .timeline-block-left {
-    float: right;
+    float: left;
     direction: rtl
   }
   
   .tab-pane-container .timeline-block-right .timeline-content ,
   .tab-pane-container .timeline-block-right .timeline-content p  {
-    text-align: right;
+    text-align: left;
   }
   
   .tab-pane-container .timeline-block-left .timeline-content p,
   .tab-pane-container .timeline-block-left .timeline-content {
-    text-align: right;
+    text-align: left;
   }
 
 
