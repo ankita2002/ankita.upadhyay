@@ -637,7 +637,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: white;
   padding: 10px; /* Adjust padding as needed */
   /*box-sizing: border-box;*/
-  transition: opacity 0.3s ease; /* Smooth transition for the opacity */
+  /*transition: opacity 0.3s ease; /* Smooth transition for the opacity */
   opacity: 0; /* Hide the description by default */
 }
 
