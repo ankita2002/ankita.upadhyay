@@ -1,0 +1,10 @@
+  {/* RESUME SECTION */}
+                  <div className="resume-section">
+                    <h3>View My Resume</h3>
+
+                    <div className="resume-card">
+                      <a href={Resume} target="_blank" rel="noreferrer">
+                        View Resume
+                      </a>
+                    </div>
+                  </div>
