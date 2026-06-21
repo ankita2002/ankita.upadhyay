@@ -16,6 +16,7 @@ export const Banner = () => {
   const period = 2000;
   const Resume = "https://drive.google.com/file/d/1UMBPeNljAjAbHZa6ZfLsaPykANNeEusu/view?usp=sharing";
 
+
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -73,12 +74,14 @@ export const Banner = () => {
                         View Resume
                       </a>
                     </div>
-                     <div className="resume-card">
-                      <a href="ttps://ankitaupadhyay.netlify.app/" target="_blank" rel="noreferrer">
+                  </div>  
+                  <div className="resume-section">
+                  <div className="resume-card">
+                      <a href="https://ankitaupadhyay.netlify.app/" target="_blank" rel="noreferrer">
                         View Research Profile
                       </a>
-                    </div>
-                  </div>          
+                  </div>   
+                  </div>     
               </div>}
             </TrackVisibility>
           </Col>

@@ -95,10 +95,12 @@ export const Contact = () => {
                         View Resume
                       </a>
                     </div>
-
-                     <div className="resume-card">
+                  </div>
+                  <div className="resume-section">
+                  <h3>View My Research Profile</h3>
+                  <div className="resume-card">
                       <a href="https://ankitaupadhyay.netlify.app/" target="_blank" rel="noreferrer">
-                        View My Reasearch Portfolio
+                        View My Portfolio
                       </a>
                     </div>
                   </div>
