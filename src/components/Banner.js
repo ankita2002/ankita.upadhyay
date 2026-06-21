@@ -73,6 +73,11 @@ export const Banner = () => {
                         View Resume
                       </a>
                     </div>
+                     <div className="resume-card">
+                      <a href="ttps://ankitaupadhyay.netlify.app/" target="_blank" rel="noreferrer">
+                        View Research Profile
+                      </a>
+                    </div>
                   </div>          
               </div>}
             </TrackVisibility>
