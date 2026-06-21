@@ -9,23 +9,6 @@ export const ResearchPublications = () => {
       link: "https://ssgmjournal.in/index.php/ssgm/article/view/79",
     },
     {
-      title:
-        "Crowdfunding for Engineering Startups using Blockchain and Smart Contracts",
-      type: "Research Paper",
-      year: "April 2022",
-      publication:
-        "International Journal of Research and Analytical Reviews",
-      link: "https://www.ijrar.org/papers/IJRAR22B1545.pdf",
-    },
-    {
-      title: "Face Mask Detection and Attendance System",
-      type: "Research Paper",
-      year: "June 2021",
-      publication:
-        "International Research Journal of Engineering and Technology",
-      link: "https://www.irjet.net/archives/V8/i6/IRJET-V8I6601.pdf",
-    },
-    {
       title: "Face Mask Detection and Attendance System",
       type: "Survey Paper",
       year: "March 2021",
@@ -38,6 +21,27 @@ export const ResearchPublications = () => {
   return (
     <section className="research" id="research">
       <div className="container">
+         {/* 🔹 EDUCATION SECTION */}
+         <div className="education-section">
+          <h2>Education</h2>
+
+          <div className="education-card">
+            <h3>Master’s in Electrical Engineering and Information Technology</h3>
+            <p><strong>Major:</strong> Communication Systems</p>
+            <p><strong>University:</strong> Hochschule Darmstadt, Germany</p>
+            <p><strong>Duration:</strong> September 2024 – Present</p>
+            <p className="edu-modules">
+              <strong>Modules:</strong> Wireless and Mobile Communication, Antenna & Microwave Systems, Advanced DSP, Advanced Modulation, System & Hardware Design
+            </p>
+          </div>
+
+          <div className="education-card">
+            <h3>Bachelor of Engineering in Electronics and Telecommunication</h3>
+            <p><strong>University:</strong> Pillai College of Engineering, India</p>
+            <p><strong>Duration:</strong> June 2019 – February 2023</p>
+            <p><strong>Grade:</strong> 1.6 (Sehr Gut)</p>
+          </div>
+        </div>
         <div className="research-header">
           <h2>Research Publications</h2>
 

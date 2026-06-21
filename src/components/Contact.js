@@ -4,15 +4,14 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Contact = () => {
-  const email = "ankitaupadhyayaa@gmail.com";
+  const email = "aryanjadhav98@gmail.com";
 
-  const linkedinUrl = "https://www.linkedin.com/in/ankitaupa/";
+  const linkedinUrl = "https://www.linkedin.com/in/aryanjadhav26/";
   const githubUrl = "https://github.com/ankita2002/ankita.upadhyay";
-  const codechefUrl = "https://www.codechef.com/users/ankita2008";
-  const leetcodeUrl = "https://leetcode.com/u/ankita2008/";
-  const kaggleUrl = "https://www.kaggle.com/ankita2002";
-  const Resume = "https://drive.google.com/file/d/1UMBPeNljAjAbHZa6ZfLsaPykANNeEusu/view?usp=sharing";
-
+  //const codechefUrl = "https://www.codechef.com/users/ankita2008";
+  //const leetcodeUrl = "https://leetcode.com/u/ankita2008/";
+  //const kaggleUrl = "https://www.kaggle.com/ankita2002";
+  const Resume = "https://drive.google.com/drive/u/0/folders/1wr4bm2Gz5YfTk3YDRH0u9bItflRINrs0";
   const handleEmailClick = () => {
     window.location.href = `mailto:${email}`;
   };
@@ -60,31 +59,40 @@ export const Contact = () => {
                     </div>
 
                   </div>
-
                   {/* NEW SOCIAL SECTION */}
-                  <div className="social-section">
-                    <h3>View My Socials</h3>
+                  {/* NEW ABOUT SECTION */}
+<div className="social-section">
+  <h3>Know More About Me</h3>
 
-                    <div className="social-grid">
+  <div className="social-grid">
 
-                      <a href={githubUrl} target="_blank" rel="noreferrer" className="social-card">
-                        GitHub
-                      </a>
+    <div className="social-card-text">
+      <strong>Name: </strong> Aryan Abhijeet Jadhav
+    </div>
 
-                      <a href={codechefUrl} target="_blank" rel="noreferrer" className="social-card">
-                        CodeChef
-                      </a>
+    <div className="social-card-text">
+      <strong>Email: </strong> aryanjadhav98@gmail.com
+    </div>
 
-                      <a href={leetcodeUrl} target="_blank" rel="noreferrer" className="social-card">
-                        LeetCode
-                      </a>
+    <div className="social-card-text">
+      <strong>Phone: </strong> +49 152 18 33 64 43
+    </div>
 
-                      <a href={kaggleUrl} target="_blank" rel="noreferrer" className="social-card">
-                        Kaggle
-                      </a>
+    <div className="social-card-text">
+      <strong>Location: </strong> Darmstadt, Germany
+    </div>
 
-                    </div>
-                  </div>
+    <a 
+      href={githubUrl} 
+      target="_blank" 
+      rel="noreferrer" 
+      className="social-card"
+    >
+      GitHub
+    </a>
+
+  </div>
+</div>
 
                   {/* RESUME SECTION */}
                   <div className="resume-section">

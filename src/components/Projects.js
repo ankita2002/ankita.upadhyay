@@ -50,7 +50,7 @@ export const Projects = () => {
     { eventKey: "first", label: "Projects" },
     { eventKey: "second", label: "Achievements" },
     { eventKey: "third", label: "Work Experience" },
-    { eventKey: "fourth", label: "Research" },
+    { eventKey: "fourth", label: "Education" },
   ];
 
   return (

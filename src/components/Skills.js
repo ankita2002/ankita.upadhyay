@@ -1,17 +1,11 @@
-import Csharp from "../assets/img/csharp.svg";
-import html from "../assets/img/html.png";
-import javascript from "../assets/img/javascript.png";
-import css from "../assets/img/css.png";
-import react from "../assets/img/react.png";
-import bootstrap from "../assets/img/bootstrap.png";
-import mysql from "../assets/img/Mysql.png";
 import python from "../assets/img/python.png";
-import flask from "../assets/img/flask.jpg";
 import pandas from "../assets/img/pandas.png";
-import nltk from "../assets/img/nltk.png";
-import opencv from "../assets/img/opencv.png";
-import deeplearning from "../assets/img/deeplearning.jpg";
+import cpp from "../assets/img/c++..png";
 import Carousel from "react-multi-carousel";
+import cst from "../assets/img/CST-logo.webp";
+import excel from "../assets/img/Excel_logo.png";
+import powerpoint from "../assets/img/PowerPoint.png";
+import matlab from "../assets/img/Matlab_Logo.png"; 
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 
@@ -35,21 +29,16 @@ export const Skills = () => {
     },
   };
 
-  const skills = [
-    { img: react, label: "React JS" },
-    { img: react, label: "React Redux" },
-    { img: javascript, label: "JavaScript" },
-    { img: html, label: "HTML5" },
-    { img: css, label: "CSS / Sass" },
-    { img: bootstrap, label: "Bootstrap" },
-    { img: Csharp, label: "C#" },
+  // ONLY language / tool based skills in carousel
+  const tools = [
     { img: python, label: "Python" },
-    { img: flask, label: "Flask" },
-    { img: mysql, label: "MySQL" },
-    { img: nltk, label: "NLTK" },
-    { img: pandas, label: "Pandas" },
-    { img: deeplearning, label: "TensorFlow & Keras" },
-    { img: opencv, label: "OpenCV & OCR" },
+    { img: pandas, label: "NumPy & Pandas" },
+    { img: matlab, label: "MATLAB" },
+    { img: matlab, label: "MATLAB Simulink" },
+    { img: cpp, label: "C++" },
+    { img: cst, label: "CST Studio" },
+    { img: excel, label: "Excel" },
+    { img: powerpoint, label: "PowerPoint" },
   ];
 
   return (
@@ -59,36 +48,54 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p className="skill-summary">
-                <strong>Languages:</strong> C, C++, C#, Java, JavaScript, Python,
-                PHP; React, Redux; HTML, CSS, Sass, Bootstrap; regular
-                expressions (Regex); Flask, MySQL.
-                <br />
-                <strong>Machine learning &amp; AI:</strong> TensorFlow, Keras,
-                Pandas, NLTK, OpenCV; OCR and deep learning (e.g. CRNN,
-                keras-ocr); NLP and extractive text summarization.
-                <br />
-                <strong>Automation:</strong> Playwright
-‚                <br />
-                <strong>Environment &amp; platforms:</strong> Git, GitHub, AWS,
-                Google Cloud
-              </p>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="owl-carousel owl-theme skill-slider"
-              >
-                {skills.map(({ img, label }, index) => (
-                  <div className="item" key={`${label}-${index}`}>
-                    <img src={img} alt={label} />
-                    <h3>{label}</h3>
-                  </div>
-                ))}
-              </Carousel>
+
+              {/* 🔹 TECHNICAL SKILLS */}
+              <div className="skills-section">
+                <h4>Technical Skills</h4>
+                <ul className="skills-list">
+                  <li>RF & Mixed Signal Measurement (Spectrum Analyzer, VNA, Oscilloscope basics)</li>
+                  <li>Wireless Systems: 4G, 5G, OFDM, MIMO</li>
+                  <li>Modulation Behaviour, Digital Modulation & Signal Analysis</li>
+                  <li>SDR Experimentation & Waveform Analysis</li>
+                  <li>Data Analysis, Automation & Signal Processing</li>
+                  <li>Modelling & Simulation (MATLAB Simulink, CST - Basics)</li>
+                </ul>
+              </div>
+
+              {/* 🔹 TOOLS CAROUSEL */}
+              <div className="skills-section">
+                <h4>Programming & Tools</h4>
+
+                <Carousel
+                  responsive={responsive}
+                  infinite={true}
+                  className="owl-carousel owl-theme skill-slider"
+                >
+                  {tools.map(({ img, label }, index) => (
+                    <div className="item" key={`${label}-${index}`}>
+                      <img src={img} alt={label} />
+                      <h3>{label}</h3>
+                    </div>
+                  ))}
+                </Carousel>
+              </div>
+
+              {/* 🔹 SOFT SKILLS */}
+              <div className="skills-section">
+                <h4>Soft Skills</h4>
+                <ul className="skills-list">
+                  <li>Analytical Thinking & Problem Solving</li>
+                  <li>Clear Communication & Team Collaboration</li>
+                  <li>Structured and Reliable Working Style</li>
+                  <li>Fast Learning Ability</li>
+                </ul>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
+
       <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   );

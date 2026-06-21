@@ -81,6 +81,38 @@ p.success {
 p.danger {
 	color: red;
 }
+
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+
+.app-content {
+  position: relative;
+  z-index: 2;
+}
+
+.network-lines-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  touch-action: none;
+  opacity: 0.7;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #000 !important;
+  color: #fff !important;
+  font-family: "Centra", sans-serif !important;
+}
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -251,7 +283,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/abfb81dd541b6c3359233a1c249fe5bb.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -275,12 +306,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #fff;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
-}
+  background-color: rgba(0, 0, 0, 0.3);}
 .banner button {
   color: #fff;
   font-weight: 700;
@@ -369,7 +400,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+.skills-section {
+  margin-top: 30px;
+  text-align: left;
+}
 
+.skills-section h4 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.skills-list {
+  list-style: disc;
+  padding-left: 20px;
+  color: #ffffff;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.skills-list li {
+  margin-bottom: 8px;
+}
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -515,7 +567,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
   text-align: center;
   margin-bottom: 12px;
-  color: #121212;
+  color: #fff;
 }
 
 .contact-row {
@@ -608,7 +660,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   gap: 15px;
 }
 
-.social-card {
+.social-card{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -626,6 +678,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90deg, #e38140, #2fbd4b);
   transform: translateY(-3px);
   color: #fff;
+}
+
+.social-card-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 20px;
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+
+  text-align: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  transition: all 0.3s ease;
+}
+
+.social-card-text:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -668,6 +748,76 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
 }
 /********************* Research ***************************/
+
+.education-section {
+  margin-bottom: 50px;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.education-card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.education-card p {
+  color: #ddd;
+  margin: 4px 0;
+  width: 100%;
+}
+
+.edu-modules {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.education-section {
+  margin-bottom: 50px;
+  text-align: left;
+}
+.education-section h2 { 
+  margin-bottom: 30px;
+  text-align: left; 
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px 30px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  text-align: left; /* ✅ IMPORTANT */
+}
+
+.education-card h3 {
+  color: #fff;
+  margin-bottom: 12px;
+  text-align: left; /* ✅ */
+}
+
+.education-card p {
+  color: #ddd;
+  margin: 6px 0;
+  text-align: left; /* ✅ */
+}
+
+.edu-modules {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left; /* ✅ */
+}
 .research {
   padding: 80px 0;
   background: #0f0f0f;
@@ -850,67 +1000,61 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 /***************Achievements CSS********************/
+
 .Achievements {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 20px;
+  margin-top: 60px;
 }
 
-.achievement-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.section-title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
 }
 
-.instagram-post {
+.achievement-block {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  text-align: left; /* 🔥 IMPORTANT FIX */
+}
+
+/* Title */
+.achievement-block h3 {
+  color: #fff;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+/* CLEAN LIST FIX */
+.clean-list {
+  list-style: none; /* ❌ remove default bullets */
+  padding-left: 0;
+  margin: 0;
+}
+
+.clean-list li {
   position: relative;
-  max-width: 400px; /* Adjust width as needed */
-  margin: 0 auto; /* Center the post */
+  padding-left: 20px;
+  margin-bottom: 12px;
+
+  color: #ddd;
+  line-height: 1.7;
+  text-align: left;
 }
 
-.instagram-post iframe {
-  /*width: 100%;
-  height: 500px; /* Adjust height as needed */
-  display: block;
-}
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-  .instagram-post iframe {
-    height: 443px; /* Adjusted height for mobile */
-  }
-}
-.description {
+/* Custom bullet */
+.clean-list li::before {
+  content: "•";
   position: absolute;
-  bottom: 0;
   left: 0;
-  width: 100%;
-  height: 200px;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for the description */
-  color: white;
-  padding: 10px; /* Adjust padding as needed */
-  /*box-sizing: border-box;*/
-  /*transition: opacity 0.3s ease; /* Smooth transition for the opacity */
-  opacity: 0; /* Hide the description by default */
-}
-
-.description p {
-  width: 100%;
-}
-
-.instagram-post:hover .description {
-  opacity: 0.8; /* Show the description on hover */
-  height: 200px;
-  overflow: hidden;
-}
-
-.title-footer {
-  position: relative;
-  max-width: 400px; /* Adjust width as needed */
-  margin: 0 auto; /* Center the post */
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-
+  color: #9b5cff; /* matches your theme */
+  font-size: 18px;
+  line-height: 1;
 }
 /*****************Work Experience************/
 .tab-pane-container {
@@ -980,7 +1124,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .tab-pane-container .timeline-content {
   width: 95%;
   padding: 0 15px;
-  color: #666;
+  color: #fff;
   display: block;
 }
 
@@ -993,7 +1137,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .tab-pane-container .timeline-content span {
   font-size: 15px;
-  color: #a4a4a4;
+  color: #fff;
   display: block;
 }
 
@@ -1001,7 +1145,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 14px;
   line-height: 1.5em;
   word-spacing: 1px;
-  color: #888;
+  color: #f3ecec;
 }
 
 .tab-pane-container .timeline-content .work-section-title {
@@ -1020,7 +1164,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-left: 1.2em;
   font-size: 14px;
   line-height: 1.55;
-  color: #888;
+  color: #b0a9a9;
 }
 
 .tab-pane-container .timeline-content ul.work-experience-list li {
@@ -1146,7 +1290,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .profile {
   width: 400px;
-  height: 400px;
+  height: 500px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
