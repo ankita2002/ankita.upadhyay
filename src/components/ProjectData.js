@@ -38,7 +38,50 @@ export const projectsData = [
       "https://github.com/ankita2002/Mental-Heath-Disease-Detection "
     ],
   },
+  {
+  slug: "residual-gru-forecasting",
+  title: "Residual GRU",
+  subtitle: "Multivariate Time Series Forecasting",
+  date: "July 2026",
+  shortDescription:
+    "PyTorch forecasting model that learns residual corrections over a weekly seasonal baseline for anonymized operational time series.",
 
+  skills: [
+    "Python",
+    "PyTorch",
+    "GRU",
+    "Deep Learning",
+    "Time Series",
+    "Forecasting",
+    "NumPy",
+    "Pandas",
+    "Scikit Learn",
+    "Matplotlib",
+    "Feature Engineering",
+    "Hugging Face",
+  ],
+
+  github:
+    "https://github.com/ankita2002/residual_gru_time_series_forecasting",
+
+  notebook:
+    "https://github.com/ankita2002/residual_gru_time_series_forecasting/blob/main/Improved_GRU_Implementation.ipynb",
+
+  details: [
+    "Developed a multivariate time series forecasting model for anonymized hourly operational load data as part of the DLAM Time Series Bonus Project.",
+    "Processed 414,720 training rows containing 96 operational time series and constructed 32 numerical and timestamp based input features.",
+    "Used the previous 168 hours of historical data to predict residual corrections for the next 24 hours.",
+    "Implemented a two layer GRU in PyTorch with a hidden dimension of 128 and dropout of 0.25.",
+    "Combined the predicted GRU residual with a Weekly Lag 168 Baseline to preserve weekly seasonal information.",
+    "Created a memory efficient PyTorch Dataset that stores series arrays and window positions instead of materializing every sliding window.",
+    "Trained the model using a custom objective combining MAE, Huber loss, and a symmetric percentage error component.",
+    "Applied AdamW optimization, gradient clipping, learning rate reduction, early stopping, and best checkpoint selection.",
+    "Evaluated the model using MAE, MSE, RMSE, MAPE, SMAPE, WAPE, and a custom Overall score.",
+    "Reduced WAPE by 32.36%, MSE by 51.59%, and the Overall local validation error by 32.83% compared with the Weekly Lag 168 Baseline.",
+    "Generated recursive 24 hour forecast blocks for the complete 336 hour validation horizon.",
+    "Created comparison tables and visualizations for baseline performance, error reduction, and actual versus forecasted values.",
+  ],
+  },
   {
     slug: "luxa",
     title: "Luxa",
